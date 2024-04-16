@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# BattleShip Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+BattleShip is a simple web application developed as part of my portfolio, featuring a frontend implemented in React JS and a backend in Java using the Spring framework. This app allows two players to challenge each other in a game of naval battle. The user interface consists of three main pages:
 
-## Available Scripts
+## Pages
 
-In the project directory, you can run:
+### HomePage
 
-### `npm start`
+- This page offers the option to start a new game or join an existing one. 
+- Upon creating a new game, a game ID is provided, which can be shared with another player to allow them to join. 
+- The game begins as soon as both players are connected to the same game.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### SettingPage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Here, players must place their ships on the game grid, following the instructions displayed in a message box above the grid. 
+- Players are required to select a defined number of adjacent cells, either horizontally or vertically. 
+- Failure to comply with these conditions will result in an error message. 
+- After all ships are positioned, the game moves to the next phase.
 
-### `npm test`
+### PlayPage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- In the gameplay page, the player’s own ships are visible on the left, while the opponent’s grid is on the right. 
+- Players attack by clicking on cells in the opponent's grid, trying to hit and sink all the enemy ships. 
+- The game ends when all of one player's ships have been destroyed.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screens](screens.png "Screens Flow")
