@@ -1,0 +1,50 @@
+/* Base style for cells */
+.cell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #adeeff;
+    color: #333;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+/* Clickable cells */
+.clickable-cell {
+    cursor: pointer;
+}
+
+.clickable-cell:hover,
+.clickable-cell:active {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cell-clicked,
+.clickable-cell.cell-clicked {
+    background-color: #ff5555;
+}
+
+.cell-aircraft,
+.cell-battleship,
+.cell-cruiser,
+.cell-submariner,
+.cell-destroyer .ship-cell-attacked.cell-attacked {}
+
+/* Style for cell headers */
+.cell-header {
+    font-weight: bold;
+    background-color: #7fffd4;
+    color: #005f5f;
+}
+
+.overlay-text {
+    z-index: 1;
+    position: absolute;
+}

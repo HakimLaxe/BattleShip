@@ -1,0 +1,15 @@
+.setting-grid {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(11, 40px);
+    grid-template-rows: repeat(11, 40px);
+}
+
+.setting-grid div {
+    border: 1px solid #ddd;
+    height: 40px;
+}

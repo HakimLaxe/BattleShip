@@ -1,0 +1,29 @@
+.message-box {
+    width: 80%;
+    padding: 15px;
+    /* Aumentato per un po' più di spazio */
+    margin: 20px auto;
+    background-color: royalblue;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* Impostato su auto per adattarsi al contenuto */
+    color: wheat;
+    /* Confermato il colore del testo bianco per il contrasto */
+    font-family: 'Arial', sans-serif;
+    /* Aggiunta di un tipo di font */
+    font-size: 1.2em;
+    /* Aumentata la dimensione del testo */
+    transition: all 0.3s ease;
+    /* Aggiunta di una transizione per gli hover effects */
+}
+
+.message-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
